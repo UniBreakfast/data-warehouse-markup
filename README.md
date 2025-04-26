@@ -1,4 +1,4 @@
-[# data-warehouse-markup](https://github.com/UniBreakfast/data-warehouse-markup)
+# [data-warehouse-markup](https://github.com/UniBreakfast/data-warehouse-markup)
 
 Екзамен 1 — Простий вебсайт
 
