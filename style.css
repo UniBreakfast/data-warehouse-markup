@@ -19,6 +19,10 @@
   --colors-pink-instagram: #c13584;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -108,6 +112,15 @@ header {
 
   button {
     margin-left: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;  
+    
+    &::after {
+      content: url("images/arrow.svg");
+      transform: translateY(3px);
+    }
   }
 }
 
@@ -192,22 +205,31 @@ header {
         margin-left: -100px;
         padding: 62px 70px 62px 100px;
         border-radius: 50px;
+        background-repeat: no-repeat;
       }
 
       &:nth-child(1)>.content {
         background-color: var(--colors-green-light);
+        background-image: url("images/search.svg");
+        background-position: 155px 20px;
       }
 
       &:nth-child(2)>.content {
         background-color: var(--colors-violet-light);
+        background-image: url("images/access.svg");
+        background-position: 169px 229px;
       }
 
       &:nth-child(3)>.content {
         background-color: var(--colors-pink-light);
+        background-image: url("images/print.svg");
+        background-position: 315px 20px;
       }
 
       &:nth-child(4)>.content {
         background-color: var(--colors-blue-light);
+        background-image: url("images/security.svg");
+        background-position: 20px 20px;
       }
 
       img {
@@ -245,11 +267,15 @@ header {
   border-radius: 50px;
   background-color: var(--colors-blue-medium);
   padding: 80px 70px;
+  background-image: url("images/testimonials.svg");
+  height: 580px;
+  box-sizing: border-box;
 
   h2 {
     text-align: center;
     margin-bottom: 80px;
     color: var(--text-gray-dark);
+    height: 40px;
   }
 
   ul {
@@ -272,11 +298,13 @@ header {
 
       h3 {
         font-weight: 500;
+        height: 26px;
       }
 
       address {
         color: var(--colors-violet);
         margin-block: 2px 18px;
+        height: 22px;
       }
     }
   }
@@ -335,6 +363,7 @@ footer {
         display: grid;
         max-width: 275px;
         line-height: 180%;
+        gap: 10px;
 
         a:nth-child(n + 2) {
           font-weight: 400;
@@ -352,6 +381,14 @@ footer {
     nav>ul {
       display: grid;
       gap: 10px;
+
+      a {
+        transition: 400ms;
+
+        &:hover {
+          color: var(--colors-violet-middle);
+        }
+      }
     }
 
     .socials {
