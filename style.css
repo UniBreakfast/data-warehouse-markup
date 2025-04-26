@@ -1,0 +1,20 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Work Sans", sans-serif;
+  --third-family: "Rubik", sans-serif;
+	--text-violet-dark: #212353;
+	--text-gray-dark: #4b5d68;
+	--colors-violet: #9c69e2;
+	--colors-violet-middle: #8a40ee;
+	--colors-pink: #f063b8;
+	--colors-pink-middle: #eb4bab;
+	--colors-green-light: #f0faf9;
+	--colors-violet-light: #f6f0fd;
+	--colors-pink-light: #fef0f8;
+	--colors-blue-light: #eaf6fc;
+	--colors-pink-medium: #fde8f5;
+	--colors-blue-medium: #cdf;
+	--colors-blue-facebook: #3b5998;
+	--colors-blue-twitter: #00acee;
+	--colors-pink-instagram: #c13584;
+}
