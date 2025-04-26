@@ -18,3 +18,106 @@
 	--colors-blue-twitter: #00acee;
 	--colors-pink-instagram: #c13584;
 }
+
+main {
+  max-width: 1170px;
+  margin-inline: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+
+  ul {
+    display: flex;
+    gap: 40px;
+  }
+
+  button {
+    margin-left: auto;
+  }
+}
+
+.hero {
+  display: flex;
+}
+
+.about {
+  display: flex;
+}
+
+.features {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    .feature {
+      max-width: 50%;
+      display: flex;
+    }
+  }
+}
+
+.testimonials {
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    .testimonial {
+      display: flex;
+      align-items: start;
+      gap: 15px;
+    }
+  }
+}
+
+.promo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .content {
+    margin-right: auto;
+  }
+}
+
+footer {
+  .row {
+    display: flex;
+    gap: 169px;
+
+    .column:first-child {
+      margin-right: auto;
+
+      address {
+        max-width: 275px;
+      }
+    }
+
+    .socials {
+      display: flex;
+      gap: 15px;
+
+      .social {
+        width: 50px;
+        aspect-ratio: 1;
+
+        a {
+          height: 100%;
+          display: grid;
+          place-content: center;
+          background-color: var(--text-violet-dark);
+          border-radius: 50%;
+          opacity: 10%;
+        }
+      }
+    }
+  }
+}
